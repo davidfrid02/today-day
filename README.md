@@ -36,5 +36,8 @@ ex. [@davidfrid02](https://github.com/davidfrid02)
 
 ## Version History
 
+* 1.0.2
+    * Added todayLowerCase function
+    * Added todayUpperCase function
 * 1.0.1
     * Initial Release
