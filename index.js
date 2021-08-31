@@ -8,6 +8,7 @@ const days = [
   "Saturday",
 ];
 const getDay = () => {
+  const date = new Date();
   return days[date.getDay()];
 };
 exports.today = () => {
