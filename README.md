@@ -1,6 +1,6 @@
 # Project Title
 
-Simple library to get today date
+Simple library to get today date.
 
 ## Description
 
@@ -28,14 +28,10 @@ todayDay.todayLowerCase();
 todayDay.todayUpperCase();
 ```
 
-## Authors
-
-Contributors names and contact info
- 
-ex. [@davidfrid02](https://github.com/davidfrid02)
-
 ## Version History
 
+* 1.0.4
+    * minor bug fixes
 * 1.0.3
     * minor bug fixes
 * 1.0.2
