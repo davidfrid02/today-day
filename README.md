@@ -6,11 +6,9 @@ Simple library to get today date
 
 When you dont know what day today, use this library.
 
-## Getting Started
-
 ### Dependencies
 
-* NodeJS 15+
+* Node.js 15+
 
 ### Installing
 
@@ -19,11 +17,15 @@ When you dont know what day today, use this library.
 ### Executing program
 
 * How to run the program
-* Step-by-step bullets
+
 ```
 const todayDay = require('today-day')
+
 todayDay.today();
 
+todayDay.todayLowerCase();
+
+todayDay.todayUpperCase();
 ```
 
 ## Authors
@@ -34,5 +36,5 @@ ex. [@davidfrid02](https://github.com/davidfrid02)
 
 ## Version History
 
-* 1.0.0
+* 1.0.1
     * Initial Release
