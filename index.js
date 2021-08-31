@@ -1,3 +1,3 @@
-exports.printMessage = ()=>{
-  console.log("This is my npm package. Wohoo !");
+exports.today = ()=>{
+  return new Date();
 }
