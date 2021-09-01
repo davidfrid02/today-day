@@ -29,19 +29,32 @@ todayDay.todayLowerCase();
 
 //FRIDAY
 todayDay.todayUpperCase();
+
+```
+* You can choose one of three languages:
+  1. en_US
+  2. he_IL
+  3. fr_FR 
+
+```
+todayDay.setLanguage('he_IL');
+
+//שישי
+todayDay.today();
+
+//["en_US", "fr_FR", "he_IL"]
+todayDay.getSupportedLanguages();
+
+
 ```
 
 ## Version History
 
+* 1.0.6
+    * Added support in Hebrew language
+    * Added support in Franch language
+    * Added function to set language
+    * Added function to get supported languages
 * 1.0.5
     * minor bug fixes
     * README add repository and homepage
-* 1.0.4
-    * minor bug fixes
-* 1.0.3
-    * minor bug fixes
-* 1.0.2
-    * Added todayLowerCase function
-    * Added todayUpperCase function
-* 1.0.1
-    * Initial Release
