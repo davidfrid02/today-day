@@ -13,6 +13,11 @@ const days = [
 const supportedLanguage = ["en_US", "fr_FR", "he_IL"];
 let translateLanguage;
 
+const setDefaultLanguage = () => {
+  const rawData = fs.readFileSync(`${__dirname}/language/en_US.json`);
+  translateLanguage = JSON.parse(rawData);
+};
+setDefaultLanguage();
 const getDay = () => {
   const date = new Date();
   const today = days[date.getDay()];
@@ -24,12 +29,11 @@ exports.getSupportedLanguages = () => {
 };
 
 exports.setLanguage = (language) => {
-  if (!language) {
-    language = "en_US";
-  }
-  if (supportedLanguage.includes(language)) {
-    const rawData = fs.readFileSync(`./language/${language}.json`);
-    translateLanguage = JSON.parse(rawData);
+  if (language && supportedLanguage.includes(language)) {
+    if (supportedLanguage.includes(language)) {
+      const rawData = fs.readFileSync(`${__dirname}/language/${language}.json`);
+      translateLanguage = JSON.parse(rawData);
+    }
   }
 };
 
