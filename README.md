@@ -51,11 +51,11 @@ todayDay.getSupportedLanguages();
 
 ## Version History
 
-- 1.0.8
+- 1.0.9
   - Added support in Hebrew language
   - Added support in French language
   - Added function to set language
   - Added function to get supported languages
-- 1.0.7
+- 1.0.8
   - minor bug fixes
   - README add repository and homepage
