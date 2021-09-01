@@ -6,7 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "homepage": "https://github.com/davidfrid02/today-day#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidfrid02/today-day.git"
+  },
+  "keywords": [
+    "date",
+    "day",
+    "today",
+    "day-today",
+    "today-day"
+  ],
   "author": "",
   "license": "ISC"
 }

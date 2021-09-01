@@ -1,6 +1,6 @@
 # Project Title
 
-Simple library to get today date.
+Simple library to get today day.
 
 ## Description
 
@@ -8,7 +8,7 @@ When you dont know what day today, use this library.
 
 ### Dependencies
 
-* Node.js 15+
+* Node.js 4.9.1
 
 ### Installing
 
@@ -21,15 +21,21 @@ When you dont know what day today, use this library.
 ```
 const todayDay = require('today-day')
 
+//Friday
 todayDay.today();
 
+//friday
 todayDay.todayLowerCase();
 
+//FRIDAY
 todayDay.todayUpperCase();
 ```
 
 ## Version History
 
+* 1.0.5
+    * minor bug fixes
+    * README add repository and homepage
 * 1.0.4
     * minor bug fixes
 * 1.0.3
