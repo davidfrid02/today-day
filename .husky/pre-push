@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm .\node_modules\.bin\eslint index.js
+npm .\\node_modules\\.bin\\eslint index.js
