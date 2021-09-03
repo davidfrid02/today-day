@@ -2,3 +2,5 @@
 .eslintrc.json
 .eslintignore
 jest.config.js
+index.test.js
+coverage

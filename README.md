@@ -56,8 +56,8 @@ npm run test
 
 ## Version History
 
-- 1.0.12
-  - Added jest library for tests.
+- 1.1.0
+  - Added Jest library for tests.
 - 1.0.9
   - Added support in Hebrew language.
   - Added support in French language.
