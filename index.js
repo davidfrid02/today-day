@@ -6,8 +6,7 @@ let translateLanguage;
 
 const privateMethods = {
     getDay: () => {
-        const date = new Date();
-        const today = days[date.getDay()];
+        const today = days[new Date().getDay()];
         return translateLanguage[today];
     },
     setDefaultLanguage: () => {
@@ -26,14 +25,19 @@ const publicMethods = {
         if (language && supportedLanguage.includes(language)) {
             const rawData = fs.readFileSync(`${__dirname}/language/${language}.json`);
             translateLanguage = JSON.parse(rawData);
+        } else {
+            throw Error('Not suported language');
         }
     },
+
     today: () => {
         return privateMethods.getDay();
     },
+
     todayLowerCase: () => {
         return privateMethods.getDay().toLowerCase();
     },
+
     todayUpperCase: () => {
         return privateMethods.getDay().toUpperCase();
     },

@@ -2,10 +2,11 @@
   "name": "today-day",
   "version": "1.0.11",
   "description": "",
-  "main": "index.js",
+  "main": "todayDay.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": ".\\node_modules\\.bin\\eslint index.js"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "eslint": "eslint index.js"
   },
   "homepage": "https://github.com/davidfrid02/today-day#readme",
   "repository": {
@@ -24,7 +25,7 @@
   "prettier": {
     "trailingComma": "es5",
     "tabWidth": 4,
-    "semi": false,
+    "semi": true,
     "singleQuote": true,
     "printWidth": 120
   },

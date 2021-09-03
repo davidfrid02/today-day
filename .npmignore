@@ -1,2 +1,4 @@
 .husky
 .eslintrc.json
+.eslintignore
+jest.config.js
