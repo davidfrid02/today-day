@@ -8,7 +8,7 @@ When you dont know what day today, use this library.
 
 ### Dependencies
 
-- Node.js 4.9.1
+- Node.js 4.9.1+
 
 ### Installing
 
@@ -49,13 +49,20 @@ todayDay.getSupportedLanguages();
 
 ```
 
+- How to run tests
+```
+npm run test
+```
+
 ## Version History
 
+- 1.0.12
+  - Added jest library for tests.
 - 1.0.9
-  - Added support in Hebrew language
-  - Added support in French language
-  - Added function to set language
-  - Added function to get supported languages
+  - Added support in Hebrew language.
+  - Added support in French language.
+  - Added function to set language.
+  - Added function to get supported languages.
 - 1.0.8
-  - minor bug fixes
-  - README add repository and homepage
+  - minor bug fixes.
+  - README add repository and homepage.

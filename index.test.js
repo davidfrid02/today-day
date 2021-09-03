@@ -12,25 +12,25 @@ describe('Test supported languages', () => {
     });
 });
 
-// describe('Test set language', () => {
-//     test('Check if set language he_IL', () => {
-//         expect(todayDay.setLanguage('en_US')).toBe(undefined);
-//     });
-//     test('Check if a set of no supported language throw error', () => {
-//         expect(() => todayDay.setLanguage('heasd')).toThrow(Error);
-//     });
-// });
+describe('Test set language', () => {
+    test('Check if set language he_IL', () => {
+        expect(todayDay.setLanguage('en_US')).toBe(undefined);
+    });
+    test('Check if a set of no supported language throw error', () => {
+        expect(() => todayDay.setLanguage('heasd')).toThrow(Error);
+    });
+});
 
-// describe('Test today functions', () => {
-//     test('Check if get today normal', () => {
-//         expect(todayDay.today()).toBe(days[new Date().getDay()]);
-//     });
+describe('Test today functions', () => {
+    test('Check if get today normal', () => {
+        expect(todayDay.today()).toBe(days[new Date().getDay()]);
+    });
 
-// 	test('Check if get today upperCase', () => {
-//         expect(todayDay.todayUpperCase()).toBe(days[new Date().getDay()].toUpperCase());
-//     });
+	test('Check if get today upperCase', () => {
+        expect(todayDay.todayUpperCase()).toBe(days[new Date().getDay()].toUpperCase());
+    });
 
-// 	test('Check if get today lowerCase', () => {
-//         expect(todayDay.todayLowerCase()).toBe(days[new Date().getDay()].toLowerCase());
-//     });
-// });
+	test('Check if get today lowerCase', () => {
+        expect(todayDay.todayLowerCase()).toBe(days[new Date().getDay()].toLowerCase());
+    });
+});
