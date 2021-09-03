@@ -4,3 +4,4 @@
 jest.config.js
 index.test.js
 coverage
+.vscode

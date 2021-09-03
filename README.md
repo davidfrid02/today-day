@@ -24,28 +24,24 @@ const todayDay = require('today-day')
 //Friday
 todayDay.today();
 
-//friday
-todayDay.todayLowerCase();
+//Monday
+todayDay.random();
 
-//FRIDAY
-todayDay.todayUpperCase();
+//Tuesday
+todayDay.addDays(4);
 
-```
+//Wednesday
+todayDay.addDays(-29);
 
-- You can choose one of three languages:
-  1. en_US
-  2. he_IL
-  3. fr_FR
 
-```
-todayDay.setLanguage('he_IL');
+//set language to hebrew
+todayDay.locale('he_IL');
 
 //שישי
 todayDay.today();
 
 //["en_US", "fr_FR", "he_IL"]
 todayDay.getSupportedLanguages();
-
 
 ```
 
@@ -54,8 +50,20 @@ todayDay.getSupportedLanguages();
 npm run test
 ```
 
+## i18n
+- English (en_US)
+- Hebrew (he_IL)
+- French (fr_FR)
+
 ## Version History
 
+- 1.1.2
+  - Added random function
+  - Added addDays function
+- 1.1.1
+  - Changed function name setLanguages to locale
+  - Removed todayUpperCase
+  - Removed todayLowerCase
 - 1.1.0
   - Added Jest library for tests.
 - 1.0.9
@@ -63,6 +71,3 @@ npm run test
   - Added support in French language.
   - Added function to set language.
   - Added function to get supported languages.
-- 1.0.8
-  - minor bug fixes.
-  - README add repository and homepage.

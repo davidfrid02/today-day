@@ -16,6 +16,7 @@
     "rules": {
         "indent": ["error", 4],
         "linebreak-style": ["error", "windows"],
-        "arrow-body-style":"off"
+        "arrow-body-style":"off",
+        "object-shorthand":"off"
     }
 }

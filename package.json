@@ -1,8 +1,8 @@
 {
   "name": "today-day",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "",
-  "main": "todayDay.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
