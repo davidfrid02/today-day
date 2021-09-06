@@ -1,31 +1,18 @@
-const fs = require('fs');
+const languages = require('./languages');
 
-const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const supportedLanguage = ['en_US', 'fr_FR', 'he_IL'];
-let translateLanguage;
+let translateLanguage = languages.en_US;
 
 const privateMethods = {
     getDay: (dayNumber) => {
         const day = dayNumber !== undefined ? dayNumber : new Date().getDay();
-        const today = days[day];
-        return translateLanguage[today];
-    },
-    setDefaultLanguage: () => {
-        const rawData = fs.readFileSync(`${__dirname}/language/en_US.json`);
-        translateLanguage = JSON.parse(rawData);
+        return translateLanguage[day];
     },
 
-    addDays: (number) => {
+    calculateAddedDays: (number) => {
         return (new Date().getDay() + number) % 7;
     },
-
-    calculateDaysToAdd: (number) => {
-        const numberAbs = Math.abs(number);
-        const numberAbsTimesInSeven = Math.floor(numberAbs / 7) + 1;
-        return numberAbsTimesInSeven * 7 + number;
-    },
 };
-privateMethods.setDefaultLanguage();
 
 const publicMethods = {
     getSupportedLanguages: () => {
@@ -34,8 +21,7 @@ const publicMethods = {
 
     locale: (language) => {
         if (language && supportedLanguage.includes(language)) {
-            const rawData = fs.readFileSync(`${__dirname}/language/${language}.json`);
-            translateLanguage = JSON.parse(rawData);
+            translateLanguage = languages[language];
         } else {
             throw Error('Not supported language');
         }
@@ -46,23 +32,23 @@ const publicMethods = {
     },
 
     random: () => {
-        const randomNumber = Math.floor(Math.random() * 6);
-        return privateMethods.getDay(randomNumber);
+        const randomDay = Math.floor(Math.random() * 6);
+        return privateMethods.getDay(randomDay);
     },
 
-    addDays: (_number) => {
-        let todayAddDays;
-        if (_number !== undefined && !Number.isNaN(_number)) {
-            let number = _number;
+    addDays: (number) => {
+        let dayAfterAdded;
+        if (number !== undefined && !Number.isNaN(number)) {
+            let daysToAdd = number;
             if (number < 0) {
-                number = privateMethods.calculateDaysToAdd(number);
+                daysToAdd = ((number % 7) + 7) % 7;
             }
-            const dayAfterAddedDays = privateMethods.addDays(number);
-            todayAddDays = privateMethods.getDay(dayAfterAddedDays);
+            const dayToGet = privateMethods.calculateAddedDays(daysToAdd);
+            dayAfterAdded = privateMethods.getDay(dayToGet);
         } else {
             throw Error('Not a number');
         }
-        return todayAddDays;
+        return dayAfterAdded;
     },
 };
 

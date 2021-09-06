@@ -1,6 +1,6 @@
 {
   "name": "today-day",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,8 @@
     "day",
     "today",
     "day-today",
-    "today-day"
+    "today-day",
+    "random-day"
   ],
   "author": "",
   "license": "ISC",

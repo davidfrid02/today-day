@@ -57,6 +57,9 @@ npm run test
 
 ## Version History
 
+- 1.2.0
+  - Algorithm Imporovments
+  - Changed Languages object 
 - 1.1.2
   - Added random function
   - Added addDays function
@@ -66,8 +69,4 @@ npm run test
   - Removed todayLowerCase
 - 1.1.0
   - Added Jest library for tests.
-- 1.0.9
-  - Added support in Hebrew language.
-  - Added support in French language.
-  - Added function to set language.
-  - Added function to get supported languages.
+
