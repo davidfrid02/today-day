@@ -6,7 +6,9 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "eslint": "eslint index.js"
+    "eslint": "eslint index.js",
+    "build": "browserify index.js > dist/today-day.min.js -p tinyify",
+    "npm-publish": "npm publish --access public"
   },
   "homepage": "https://github.com/davidfrid02/today-day#readme",
   "repository": {
@@ -34,6 +36,7 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.2",
-    "husky": "^7.0.2"
+    "husky": "^7.0.2",
+    "tinyify": "^3.0.0"
   }
 }
