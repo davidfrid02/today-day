@@ -12,6 +12,11 @@ When you dont know what day today, use this library.
 
 ### Installing
 
+- CDN
+```
+https://cdn.jsdelivr.net/npm/today-day@1.5.1/dist/today-day.min.js
+```
+
 - npm i today-day
 
 ### Executing program
@@ -57,7 +62,7 @@ npm run test
 
 ## Version History
 
-- 1.5.0
+- 1.5.1
   - Added browser Support
 - 1.2.0
   - Algorithm Improvements
