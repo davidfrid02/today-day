@@ -46,7 +46,7 @@ const publicMethods = {
             const dayToGet = privateMethods.calculateAddedDays(daysToAdd);
             dayAfterAdded = privateMethods.getDay(dayToGet);
         } else {
-            throw Error('Not a number');
+            throw Error('Not a number!');
         }
         return dayAfterAdded;
     },
