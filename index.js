@@ -53,4 +53,4 @@ const publicMethods = {
 };
 
 module.exports = publicMethods;
-window.todayDay = publicMethods;
+global.window.todayDay = publicMethods;
