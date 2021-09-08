@@ -57,7 +57,7 @@ npm run test
 
 ## Version History
 
-- 1.4.0
+- 1.5.0
   - Added browser Support
 - 1.2.0
   - Algorithm Imporovments
