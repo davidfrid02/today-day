@@ -1,7 +1,7 @@
 {
   "name": "today-day",
-  "version": "1.2.0",
-  "description": "",
+  "version": "1.3.0",
+  "description": "Get today day",
   "main": "index.js",
   "scripts": {
     "test": "jest",
