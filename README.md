@@ -57,10 +57,10 @@ npm run test
 
 ## Version History
 
-- 1.5.0
+- 1.5.1
   - Added browser Support
 - 1.2.0
-  - Algorithm Imporovments
+  - Algorithm Improvements
   - Changed Languages object 
 - 1.1.2
   - Added random function
