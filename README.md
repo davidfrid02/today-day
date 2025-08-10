@@ -1,4 +1,4 @@
-# Project Title
+# Today Day
 
 Simple library to get today day.
 
